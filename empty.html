@@ -130,6 +130,8 @@ Error message and password prompt
 
 <li>$:/DefaultTiddlers</li>
 
+<li>$:/Import</li>
+
 <li>$:/isEncrypted</li>
 
 <li>$:/plugins/Abe/maarfapad</li>
@@ -156,9 +158,15 @@ Error message and password prompt
 
 <li>$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad--309862025</li>
 
+<li>$:/state/showeditpreview</li>
+
+<li>$:/state/sidebar</li>
+
 <li>$:/state/tab/moresidebar-401116514</li>
 
 <li>$:/state/tab/sidebar--1835078512</li>
+
+<li>$:/state/toc/Content-Maarfapad manual-926524725</li>
 
 <li>$:/StoryList</li>
 
@@ -183,6 +191,8 @@ Error message and password prompt
 <li>Organise</li>
 
 <li>Secret</li>
+
+<li>Send Feedback</li>
 
 <li>Tiddlywiki</li>
 
@@ -8425,6 +8435,11 @@ Error message and password prompt
 <div created="20141001162503404" modified="20171019180559982" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[[Hi there!]]</pre>
 </div>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[Feedback]]</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -9147,13 +9162,22 @@ exports.wikimanager = wikiManagerWidget;
 <div created="20171020155101367" modified="20171020155101367" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad--309862025">
 <pre>contents</pre>
 </div>
+<div created="20171020222740217" modified="20171020222740217" title="$:/state/showeditpreview">
+<pre>yes</pre>
+</div>
+<div created="20171020222657690" modified="20171020222813723" title="$:/state/sidebar">
+<pre>yes</pre>
+</div>
 <div created="20171020155054916" modified="20171020155054916" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20171020155052815" modified="20171020165033587" title="$:/state/tab/sidebar--1835078512">
+<div created="20171020155052815" modified="20171020222954470" title="$:/state/tab/sidebar--1835078512">
 <pre>Content</pre>
 </div>
-<div list="[[Hi there!]]" title="$:/StoryList">
+<div created="20171020222612427" modified="20171020222649666" title="$:/state/toc/Content-Maarfapad manual-926524725">
+<pre>close</pre>
+</div>
+<div list="" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9405,6 +9429,24 @@ Tiddlywiki is extremely flexible and can be customised to suite your tastes and 
 <pre>!''EVERYTHING HERE IS A TIDDLER (that is, a NOTE). //EVERYTHING//!'' TIDDLYWIKI IS BUILT ON NOTHING BUT LOTS OF NOTES. &lt;span style=&quot;font-size: 40px&quot;&gt;😮&lt;/span&gt;
 
 That's a lot of notes. How do you [[organise these notes|Organise]]?</pre>
+</div>
+<div created="20171020192629303" modified="20171020222947836" tags="Content" title="Send Feedback">
+<pre>Seen something broken? Want to suggest a feature or just express praise/frustration. Send feedback!
+
+&lt;form action=&quot;https://formspree.io/info@maarfapad.xyz&quot; method=&quot;POST&quot;&gt;
+&lt;fieldset&gt;
+&lt;legend&gt;Send Feedback&lt;/legend&gt;
+&lt;input type=&quot;email&quot; name=&quot;_replyto&quot; placeholder=&quot;Your email&quot; required&gt;
+&lt;p&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;_subject&quot; value=&quot;Feedback&quot; /&gt;
+&lt;/p&gt;
+&lt;textarea name=&quot;body&quot; placeholder=&quot;Your feedback&quot; rows=&quot;5&quot; cols=&quot;40&quot;&gt;&lt;/textarea&gt;
+&lt;input type=&quot;text&quot; name=&quot;_gotcha&quot; style=&quot;display:none&quot; /&gt;
+&lt;/fieldset&gt;
+&lt;p&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Send&quot;&gt;
+&lt;/p&gt;
+&lt;/form&gt; </pre>
 </div>
 <div created="20171013175436800" modified="20171019180838821" tags="[[Maarfapad manual]]" title="Tiddlywiki" type="text/vnd.tiddlywiki">
 <pre>What you are currently interacting with is called:
