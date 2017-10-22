@@ -8791,7 +8791,7 @@ exports.upload = UploadWidget;
 
 })();</pre>
 </div>
-<div created="20170903163200504" modified="20171022092900720" module-type="widget" tags="" title="$:/plugins/Abe/maarfapad/wikiManager.js" type="application/javascript">
+<div created="20170903163200504" modified="20171022165730221" module-type="widget" tags="" title="$:/plugins/Abe/maarfapad/wikiManager.js" type="application/javascript">
 <pre>/*\
 created: 20170903163200504
 type: application/javascript
@@ -8872,7 +8872,7 @@ wikiManagerWidget.prototype.render = function(parent,nextSibling) {
                     })(key);
                 var text = self.document.createTextNode(key);
                 var link = self.document.createElement(&quot;a&quot;);
-                link.setAttribute(&quot;href&quot;,`window.location.host/wiki/${key}`);
+                link.setAttribute(&quot;href&quot;,`${_protocol}//${_host}/wiki/${key}`);
                 link.setAttribute(&quot;target&quot;,&quot;_blank&quot;);
                 var item = self.document.createElement(&quot;li&quot;);
                 link.appendChild(text);
@@ -9186,7 +9186,7 @@ exports.wikimanager = wikiManagerWidget;
 <div created="20171020155054916" modified="20171020155054916" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20171020155052815" modified="20171022093021513" title="$:/state/tab/sidebar--1835078512">
+<div created="20171020155052815" modified="20171022165741745" title="$:/state/tab/sidebar--1835078512">
 <pre>Content</pre>
 </div>
 <div created="20171020222612427" modified="20171020222649666" title="$:/state/toc/Content-Maarfapad manual-926524725">
