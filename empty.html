@@ -150,6 +150,8 @@ Error message and password prompt
 
 <li>$:/state/sidebar</li>
 
+<li>$:/state/tab--1498284803</li>
+
 <li>$:/state/tab-1146444442</li>
 
 <li>$:/state/tab/moresidebar-401116514</li>
@@ -172,29 +174,19 @@ Error message and password prompt
 
 <li>Content</li>
 
-<li>Early Testers</li>
+<li>First thing's First: Security</li>
 
 <li>Hi there!</li>
-
-<li>Learn more</li>
 
 <li>Maarfapad manual</li>
 
 <li>maarfapad service</li>
 
-<li>More</li>
-
-<li>Organise</li>
-
-<li>Secret</li>
+<li>Organise with Tags</li>
 
 <li>Send Feedback</li>
 
-<li>Tiddlywiki</li>
-
-<li>TL;DR</li>
-
-<li>What's all this?</li>
+<li>Using TiddlyWiki</li>
 
 </ul>
 </p>
@@ -8434,7 +8426,12 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[Early Testers]]</pre>
+# [[Hi there!]]
+# [[maarfapad service]]
+# [[First thing's First: Security]]
+# [[Using TiddlyWiki]]
+# [[Organise with Tags]]
+# [[Maarfapad manual]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -8919,23 +8916,26 @@ Error message and password prompt
 <div created="20171020222657690" modified="20171020222813723" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
+<div created="20171111175432472" modified="20171111175432472" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Filter</pre>
+</div>
 <div created="20171022085750700" modified="20171029121714794" title="$:/state/tab-1146444442">
 <pre>$:/plugins/Abe/maarfapad/controls</pre>
 </div>
 <div created="20171020155054916" modified="20171020155054916" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20171020155052815" modified="20171103092810081" title="$:/state/tab/sidebar--1835078512">
+<div created="20171020155052815" modified="20171111181418132" title="$:/state/tab/sidebar--1835078512">
 <pre>Content</pre>
 </div>
-<div created="20171020222612427" modified="20171029130025198" title="$:/state/toc/Content-Maarfapad manual-926524725">
+<div created="20171020222612427" modified="20171111175411640" title="$:/state/toc/Content-Maarfapad manual-926524725">
 <pre>close</pre>
 </div>
 <div list="" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20171029121641564" modified="20171029121651851" title="$:/temp/advancedsearch">
-<pre></pre>
+<div created="20171029121641564" modified="20171111175454184" title="$:/temp/advancedsearch">
+<pre>[tag[Maarfapad manual]][title[Maarfapad manual]]</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -8983,7 +8983,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20171030082442121" modified="20171030082514965" title="$:/temp/search">
+<div created="20171030082442121" modified="20171111181438044" title="$:/temp/search">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.14">
@@ -9103,59 +9103,67 @@ Error message and password prompt
 &lt;/div&gt;
 </pre>
 </div>
-<div created="20171029124213485" modified="20171030081852397" tags="[[Maarfapad manual]]" title="Early Testers">
-<pre>''Note for early testers:''
+<div created="20171111160113121" list="" modified="20171111181227077" tags="[[Maarfapad manual]]" title="First thing's First: Security">
+<pre>This webpage is your personal wiki app called [[TiddlyWiki|http://tiddlywiki.com]]. 
 
-# Currently you're limited to making only 2 wikis under your account for technical reasons.
-# Before saving, check your [[Maarfapad controls|$:/plugins/Abe/maarfapad/controls]] to make sure you're saving to the server.
-# ''Due to differences in http protocol, the official plugin library will not work behind maarfapad though you can still install new plugins by dragging and dropping plugin tiddlers into your wiki.'' Another workaround is to download your wiki onto your machine. While it is outside maarfapad, you can then use the official plugin library, install new plugins, upload it via [[Maarfapad controls|$:/plugins/Abe/maarfapad/controls]] and refresh.
-# Feel free to submit feedback either to [[@maarfapad|http://twitter.com/maarfapad]] on twitter or use the [[Send Feedback]] tiddler in your wiki.
-# Try everything out, make it your own. If anything seems faulty in any way, please say so. It'll be appreciated.
-# ''Always back up your data. You can always download your stuff via [[Maarfapad controls|$:/plugins/Abe/maarfapad/controls]]''
-# Last of all, ''be careful when you edit data on two devices simultaneously. You might overwrite your previous data if you're not careful.'' This will be taken care of soon so bear with me. It's a one man show currently '':-)''</pre>
+It can be downloaded to be used offline in a browser or, in this case, hosted and used in a cloud service called Maarfapad.
+
+The first thing you must do with your wiki page is to ''secure it'' with an extra layer of authentication so no one except you can open it. ''We recommend this if you want to store sensitive information in this wiki.'' 
+
+Here's how you do that.
+
+To your right is the ''sidebar'' which has various interface elements that allow you to control and customise your wiki and access notes called ''tiddlers'' stored inside the wiki's internal storage.
+
+Look closely at the tabs and you will see one labelled ''Tools''. Click it.
+
+You will see a great number of tools for various purposes. Look for one labelled ''Set password'' with the symbol of a padlock. Clicking this will enable you to set a secret password that will encrypt the contents of this wiki page, rendering it inaccessible to anyone else without the password.
+
+After you set a password, ''YOU MUST SAVE THE WIKI AND REFRESH IT TO REFLECT THE CHANGES YOU'VE MADE''.
+
+To save it to Maarfapad select ''Save to Maarfapad'' under the Controls section of the tab ''Maarfapad'' on the right hand side, then click the red save icon {{$:/core/images/save-button}} once and wait for the notification that indicates a successful save. 
+
+''Saving will usually take some 5 to 10 seconds depending on your internet connection and the size of your wiki.''
+
+After you're done with saving, refresh and voila, it will ask for your password.
+
+That's it. Now, let's briefly [[see how you use this wiki.|Using TiddlyWiki]]</pre>
 </div>
-<div created="20171013172403572" modified="20171029125932519" tags="[[Maarfapad manual]]" title="Hi there!" type="text/vnd.tiddlywiki">
+<div created="20171013172403572" list="" modified="20171111181227075" tags="[[Maarfapad manual]]" title="Hi there!">
 <pre>Hello
 
-Welcome to Maarfapad! An experiment in online knowledge management.
+Welcome to maarfapad!
 
-Here you can manage the entirety of your knowledge in a smart and efficient way.
+Here you can manage the entirety of your knowledge in a smart and efficient way. Maarfapad at its simplest is a powerful note taking solution.
 
 But it can also be so much more. It can be as simple as you want it to be, or as flexible and complex as you //need// it to be.
 
-So, [[let's show you around....|What's all this?]]</pre>
+So, [[let's show you around....|First thing's First: Security]]</pre>
 </div>
-<div created="20171013172714138" modified="20171019180348716" tags="[[Maarfapad manual]]" title="Learn more" type="text/vnd.tiddlywiki">
-<pre>''So much to learn, so little time''
-
-To learn more about how you can work with Tiddlywiki, [[click here|http://tiddlywiki.com/#Working%20with%20TiddlyWiki]].
-
-You can also extend Tiddlywiki by installing plugins via the control panel icon in the right sidebar {{$:/core/ui/Buttons/control-panel}}.
-
-If you wish to explore any other Tiddlywiki feature, the wiki's [[documentation page|http://tiddlywiki.com]] has you covered.
-
-Now, let's talk about the [[maarfapad service]]</pre>
-</div>
-<div created="20171013172224590" modified="20171019180323605" tags="Content" title="Maarfapad manual" type="text/vnd.tiddlywiki">
+<div created="20171111155056178" modified="20171111181434440" tags="Content" title="Maarfapad manual">
 <pre>&lt;&lt;list-links &quot;[tag[Maarfapad manual]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20171014234259305" modified="20171029130018843" tags="[[Maarfapad manual]]" title="maarfapad service" type="text/vnd.tiddlywiki">
+<div created="20171014234259305" list="" modified="20171111181227076" tags="[[Maarfapad manual]]" title="maarfapad service">
 <pre>Maarfapad.com hosts your wiki online on a private account, allowing you to access it anytime, anywhere on the browser.
 
-Maarfapad gives you the ability to manage multiple wikis of different types depending on your needs. Right now, only a generic, general purpose flavour called &quot;empty&quot; is available but more will come up soon.
+Maarfapad gives you the ability to manage multiple wikis of different types depending on your needs (during this testing phase, you'll be limited to making 2 wikis). Right now, only a generic, general purpose flavour called &quot;empty&quot; is available but more will come up soon.
 
-You can also download and upload wikis and they will be loaded accordingly after a page refresh.
+You can save this wiki either to the maarfapad server or download it on clicking save {{$:/core/images/save-button}}.
+
+You can also upload wikis and they will be loaded accordingly after a page refresh.
 
 All this is done via the Maarfapad plugin which you can access under the Maarfapad tab in the sidebar on the right.
 
-Any changes you make to the wiki will can be saved into the wiki file itself. You can save the wiki either to the maarfapad server or download it on clicking save {{$:/core/images/save-button}}.
+Should you find yourself offline while editing your wiki notebook, you can simply set the maarfapad plugin to download the wiki to your computer for use offline and reupload it any time.
 
-As a result, should you find yourself offline while editing your wiki notebook, you can simply set the maarfapad plugin to download the wiki to your computer for use offline and reupload it any time.
+''__FUTURE UPDATES__''
 
-Future improvements will be made to the plugin to improve user experience and to add additional functions such as better offline handling and perhaps making your wiki projects public.
+The current version of Maarfapad is set to change depending on feedback from users like you. The ultimate goal is to create the ultimate online knowledge management platform that can do atleast the following:
 
-{{Early Testers}}
+# Allow you to create and save notes and data while browsing and/or researching something online (via a browser extension and/or a companion mobile app)
+# Display and organise said notes and data into this wiki in a personal, easy to use way. Suggestions have been made to allow users to make some personal wikis public. This is also being considered for future iterations.
+# Finally, Maarfapad will potentially allow you to reuse knowledge stored inside it efficiently. You will be able to convert notes into whole word documents, generate theses, reports, PDFs, et cetera using nothing but your notes.
 
+It is hoped that you, the user, will find these potential future capabilities interesting enough to continue to use and support this project.
 
 !!That's it. You're all set! Don't forget to follow Maarfapad on:
 
@@ -9164,19 +9172,7 @@ Future improvements will be made to the plugin to improve user experience and to
 
 for updates on the status of the project as it continues to develop to serve more people. Have fun!</pre>
 </div>
-<div created="20171013180938650" modified="20171019181644759" tags="[[Maarfapad manual]]" title="More" type="text/vnd.tiddlywiki">
-<pre>Tiddlywiki by itself allows you to create bits of notes called ''tiddlers'' by users of Tiddlywiki.
-
-Tiddlers are small bits of notes, like this one you're reading. Its got a title, it is tagged, but most importantly,
-
-
-!!It can be EDITED like a wiki, with a special wiki syntax called [[wikiText|http://tiddlywiki.com/#WikiText]] and a WYSIWYG editor 
-
-Click on the pencil button {{$:/core/images/edit-button}} in the upper corner of this tiddler to try editing it. Then click the {{$:/core/ui/Buttons/save}} button to save the tiddler. Simple
-
-Speaking of notes, there is a wonderful [[secret|Secret]] here in tiddlywiki land.</pre>
-</div>
-<div created="20171013190223257" modified="20171019180348694" tags="[[Maarfapad manual]]" title="Organise" type="text/vnd.tiddlywiki">
+<div created="20171111163856729" list="" modified="20171111181227079" tags="[[Maarfapad manual]]" title="Organise with Tags">
 <pre>We organise our tiddlers/notes using tags like the one above in yellow 
 
 But tags can do more. They allow you to organise notes under notes. 
@@ -9195,14 +9191,8 @@ Notes currently open can be seen under the ''Open'' tab.
 
 ----------------
 
-Tiddlywiki is extremely flexible and can be customised to suite your tastes and needs. To see how, [[click here|http://tiddlywiki.com/#Customise%20TiddlyWiki]].
-
-[[And we have barely scratched the surface.|Learn more]]</pre>
-</div>
-<div created="20171013182248965" modified="20171019180348687" tags="[[Maarfapad manual]]" title="Secret" type="text/vnd.tiddlywiki">
-<pre>!''EVERYTHING HERE IS A TIDDLER (that is, a NOTE). //EVERYTHING//!'' TIDDLYWIKI IS BUILT ON NOTHING BUT LOTS OF NOTES. &lt;span style=&quot;font-size: 40px&quot;&gt;😮&lt;/span&gt;
-
-That's a lot of notes. How do you [[organise these notes|Organise]]?</pre>
+Now, let's take a closer look at the [[maarfapad service]]
+</pre>
 </div>
 <div created="20171020192629303" modified="20171020222947836" tags="Content" title="Send Feedback">
 <pre>Seen something broken? Want to suggest a feature or just express praise/frustration. Send feedback!
@@ -9222,30 +9212,20 @@ That's a lot of notes. How do you [[organise these notes|Organise]]?</pre>
 &lt;/p&gt;
 &lt;/form&gt; </pre>
 </div>
-<div created="20171013175436800" modified="20171019180838821" tags="[[Maarfapad manual]]" title="Tiddlywiki" type="text/vnd.tiddlywiki">
-<pre>What you are currently interacting with is called:
+<div created="20171111162043167" list="" modified="20171111181227078" tags="[[Maarfapad manual]]" title="Using TiddlyWiki">
+<pre>Using ~TiddlyWiki is easy once you get the basics down.
 
-!!''[[Tiddlywiki|http://tiddlywiki.com]]''
+__BASICS__:
 
-''Long story short'': ~TiddlyWiki is a personal notebook web application built as a wiki.
+# Everything in this wiki is written as a note or a //tiddler//, including a subtantial portion of the source code (working code is housed in tiddlers called //shadow tiddlers//).
+# You can edit these notes by clicking the edit button {{$:/core/images/edit-button}}  on the right hand corner of each tiddler and subsequently save the note appropriately.
+# You can also create new notes by clicking the 'Create new tiddler' button {{$:/core/ui/Buttons/new-tiddler}} in the sidebar to the right. 
 
-Think of it as a really, &lt;span style=&quot;font-size: 20px&quot;&gt;REALLY&lt;/span&gt; complex web page that can do neat stuff.
+Editing a tiddler is done using something called //~WikiText// and a WYSIWYG editor.
 
-For example, you can take this page with you and use it elsewhere, offline, in any web browser, like a word document!
+Once you've finished editing, you'll notice the save button {{$:/core/images/save-button}} is glowing red, reminding you to save your wiki. It is important you save your data or everything will be lost.
 
-In other words, it is portable. ''IT IS YOURS.'' You can even set a password to protect this webpage from snoopers. Try it out {{$:/core/ui/Buttons/encryption}}!
-
-But wait, there's [[more...|More]]</pre>
-</div>
-<div created="20171013175103901" modified="20171019180348673" tags="[[Maarfapad manual]]" title="TL;DR" type="text/vnd.tiddlywiki">
-<pre>''Maarfapad is an online service that acts as a personal knowledge management system, alllowing you to create and manage different flavours of the wiki within one account.''
-
-[[Here's how it works|maarfapad service]]</pre>
-</div>
-<div created="20171013172452713" modified="20171029125835822" tags="[[Maarfapad manual]]" title="What's all this?" type="text/vnd.tiddlywiki">
-<pre>If you're familiar with something called ''Tiddlywiki'' then here's all you need to know about [[Maarfapad.|TL;DR]]
-
-If you're new to all this, [[click here|Tiddlywiki]]</pre>
+You can also [[tag and organise your notes...|Organise with Tags]]</pre>
 </div>
 
 </div>
