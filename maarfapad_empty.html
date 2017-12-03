@@ -130,6 +130,10 @@ Error message and password prompt
 
 <li>$:/config/RelinkOnRename</li>
 
+<li>$:/config/TextEditor/EditorHeight/Height</li>
+
+<li>$:/config/TextEditor/EditorHeight/Mode</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -137,6 +141,8 @@ Error message and password prompt
 <li>$:/isEncrypted</li>
 
 <li>$:/plugins/Abe/maarfapad</li>
+
+<li>$:/plugins/Abe/maarfapad/navbar.css</li>
 
 <li>$:/plugins/tiddlywiki/codemirror</li>
 
@@ -179,6 +185,8 @@ Error message and password prompt
 <li>$:/state/tab/moresidebar-401116514</li>
 
 <li>$:/state/tab/sidebar--1835078512</li>
+
+<li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
 <li>$:/state/toc/Content-Maarfapad manual-926524725</li>
 
@@ -407,6 +415,12 @@ Error message and password prompt
 </div>
 <div created="20170722200106163" modified="20170722200107260" title="$:/config/RelinkOnRename" type="text/vnd.tiddlywiki">
 <pre>yes</pre>
+</div>
+<div created="20171203212132175" modified="20171203212145236" title="$:/config/TextEditor/EditorHeight/Height">
+<pre>300px</pre>
+</div>
+<div created="20171203212102442" modified="20171203212102442" title="$:/config/TextEditor/EditorHeight/Mode">
+<pre>fixed</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.15">
 <pre>{
@@ -8937,6 +8951,80 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20171201160256786" modified="20171203211812239" tags="$:/tags/Stylesheet" title="$:/plugins/Abe/maarfapad/navbar.css">
+<pre>@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+/* VERTICAL OFFSET FOR TOP OF SIDEBAR */
+div .tc-sidebar-scrollable {
+  margin-top: 40px;
+}
+
+div .tc-modal {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  div .topbar-nav-text {
+    display: none;
+  }
+  div .topbar-nav-tools {
+    float: left;
+    position: relative;
+    left: 30px;
+  }
+  div .tc-story-river {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  div .tc-tiddler-frame {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.topbar-nav {
+  display: block;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 44px;
+  background-color: black;
+  box-shadow: 0px 1px 5px grey;
+  z-index: 1000;
+}
+
+.topbar-nav-text {
+  float: left;
+  color: white;
+  font-size: 25px;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.topbar-nav-tools {
+  float: right;
+  width: 200px;
+  height: 100%;
+  position: relative;
+  right: 40px;
+  padding-top: 8px;
+  font-size: 1.5em;
+}
+
+.topbar-nav-tools button {
+  margin-right: 20px;
+}
+
+.topbar-nav-tools img {
+  width: 1em;
+}
+
+.topbar-nav-tools svg {
+  fill: white;
+}</pre>
+</div>
 <div author="JeremyRuston" dependents="" description="CodeMirror: text editor" list="readme usage" plugin-type="plugin" title="$:/plugins/tiddlywiki/codemirror" type="application/json" version="5.1.15">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -9643,16 +9731,16 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171116230438111" modified="20171116230438111" title="$:/state/plugin-info--906510658-$:/plugins/tiddlywiki/codemirror--1798174986">
 <pre>contents</pre>
 </div>
-<div created="20171116213325641" modified="20171201192546994" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad">
-<pre>yes</pre>
+<div created="20171116213325641" modified="20171203212030420" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad">
+<pre>no</pre>
 </div>
-<div created="20171116230039510" modified="20171201192556341" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad--309862025">
-<pre>contents</pre>
+<div created="20171116230039510" modified="20171203212029158" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad--309862025">
+<pre>readme</pre>
 </div>
 <div created="20171116213558265" modified="20171201160811666" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
-<div created="20171120105742932" modified="20171201232422150" title="$:/state/sidebar">
+<div created="20171120105742932" modified="20171203212157352" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20171120111259502" modified="20171120112404436" title="$:/state/tab--1384169695">
@@ -9661,7 +9749,7 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171116223610451" modified="20171201162105376" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
-<div created="20171201183533006" modified="20171201183533006" title="$:/state/tab--1963855381">
+<div created="20171201183533006" modified="20171203211949789" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
 <div created="20171116225140723" modified="20171116225159591" title="$:/state/tab-1146444442">
@@ -9670,7 +9758,7 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171117110545237" modified="20171201232039277" title="$:/state/tab-136302114">
 <pre>$:/plugins/Abe/maarfapad/controls</pre>
 </div>
-<div created="20171116223620098" modified="20171201183530151" title="$:/state/tab-1749438307">
+<div created="20171116223620098" modified="20171203211945291" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20171117110720669" modified="20171122183143189" title="$:/state/tab-2037046965">
@@ -9679,8 +9767,11 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171115223849047" modified="20171115224221485" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20171115223841006" modified="20171201232418019" title="$:/state/tab/sidebar--1835078512">
+<div created="20171115223841006" modified="20171203212154603" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Open</pre>
+</div>
+<div created="20171203211914954" modified="20171203211921066" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
 </div>
 <div created="20171116224041162" modified="20171201164603693" title="$:/state/toc/Content-Maarfapad manual-926524725">
 <pre>close</pre>
@@ -10353,7 +10444,7 @@ After you're done with saving, refresh and voila, it will ask for your password.
 
 That's it. Now, let's briefly [[see how you use this wiki.|Using TiddlyWiki]]</pre>
 </div>
-<div created="20171013172403572" list="" modified="20171111181227075" tags="[[Maarfapad manual]]" title="Hi there!">
+<div created="20171013172403572" list="" modified="20171203212149637" tags="[[Maarfapad manual]]" title="Hi there!">
 <pre>Hello
 
 Welcome to maarfapad!
