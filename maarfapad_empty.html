@@ -200,6 +200,14 @@ Error message and password prompt
 
 <li>$:/state/toc/Content-Maarfapad manual--95673580</li>
 
+<li>$:/state/toc/Content-Maarfapad manual-1543333045</li>
+
+<li>$:/state/toc/Content-Maarfapad manual-1837365533</li>
+
+<li>$:/state/toc/Content-Maarfapad manual-255598929</li>
+
+<li>$:/state/toc/Content-Maarfapad manual-673589541</li>
+
 <li>$:/state/toc/Content-Maarfapad manual-926524725</li>
 
 <li>$:/state/tree/$:/config/</li>
@@ -8721,7 +8729,7 @@ Error message and password prompt
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div author="Abe" created="20140902114846490" description="Maarfapad: A KM platform" list="readme license history" modified="20170829190545776" plugin-type="plugin" title="$:/plugins/Abe/maarfapad" type="application/json" version="1.0.29-alpha">
+<div author="Abe" created="20140902114846490" description="Maarfapad: A KM platform" list="readme license history" modified="20170829190545776" plugin-type="plugin" title="$:/plugins/Abe/maarfapad" type="application/json" version="1.0.31-alpha">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/plugins/Abe/maarfapad/account.js&quot;: {
@@ -8735,11 +8743,11 @@ Error message and password prompt
         },
         &quot;$:/plugins/Abe/maarfapad/app&quot;: {
             &quot;created&quot;: &quot;20170830152108651&quot;,
-            &quot;text&quot;: &quot;&lt;&lt;tabs \&quot;$:/plugins/Abe/maarfapad/controls Content $:/plugins/Abe/maarfapad/my-wikis $:/plugins/Abe/maarfapad/maarfapub $:/plugins/Abe/maarfapad/my-account\&quot; \&quot;Content\&quot; \&quot;\&quot; \&quot;tc-vertical\&quot;&gt;&gt;&quot;,
+            &quot;text&quot;: &quot;&lt;&lt;tabs \&quot;$:/plugins/Abe/maarfapad/controls $:/plugins/Abe/maarfapad/my-wikis $:/plugins/Abe/maarfapad/maarfapub $:/plugins/Abe/maarfapad/my-account\&quot; \&quot;$:/plugins/Abe/maarfapad/controls\&quot; \&quot;\&quot; \&quot;tc-vertical\&quot;&gt;&gt;&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
             &quot;title&quot;: &quot;$:/plugins/Abe/maarfapad/app&quot;,
             &quot;subtitle&quot;: &quot;{{$:/plugins/Abe/maarfapad/icon}} Maarfapad services&quot;,
-            &quot;modified&quot;: &quot;20171204200517325&quot;
+            &quot;modified&quot;: &quot;20171204203714841&quot;
         },
         &quot;$:/plugins/Abe/maarfapad/controls&quot;: {
             &quot;created&quot;: &quot;20170830122453833&quot;,
@@ -8957,17 +8965,24 @@ Error message and password prompt
         },
         &quot;$:/plugins/Abe/maarfapad/navbar.css&quot;: {
             &quot;created&quot;: &quot;20171201160256786&quot;,
-            &quot;text&quot;: &quot;@import url('https://fonts.googleapis.com/css?family=Comfortaa');\n\n/* VERTICAL OFFSET FOR TOP OF SIDEBAR */\ndiv .tc-sidebar-scrollable {\n  margin-top: 40px;\n}\n\ndiv .tc-modal {\n  margin-top: 40px;\n}\n\n@media screen and (max-width: 700px) {\n  div .topbar-nav-text {\n    display: none;\n  }\n  div .topbar-nav-tools {\n    float: left;\n    position: relative;\n    left: 30px;\n  }\n  div .tc-story-river {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    padding-right: 10px;\n    padding-left: 10px;\n  }\n  div .tc-tiddler-frame {\n    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);\n  }\n}\n\n.topbar-nav {\n  display: block;\n  position: fixed;\n  top: 0px;\n  width: 100%;\n  height: 44px;\n  background-color: black;\n  box-shadow: 0px 1px 5px grey;\n  z-index: 1000;\n}\n\n.topbar-nav-text {\n  float: left;\n  color: white;\n  font-size: 25px;\n  font-family: 'Comfortaa', cursive;\n  margin-top: 8px;\n  margin-left: 8px;\n}\n\n.topbar-nav-tools {\n  float: right;\n  width: 250px;\n  height: 100%;\n  position: relative;\n  right: 40px;\n  padding-top: 8px;\n  font-size: 1.5em;\n}\n\n.topbar-nav-tools button {\n  margin-right: 20px;\n}\n\n.topbar-nav-tools img {\n  width: 1em;\n}\n\n.topbar-nav-tools svg {\n  fill: white;\n}&quot;,
+            &quot;text&quot;: &quot;@import url('https://fonts.googleapis.com/css?family=Comfortaa');\n\n/* VERTICAL OFFSET FOR TOP OF SIDEBAR */\ndiv .tc-sidebar-scrollable {\n  margin-top: 40px;\n}\n\ndiv .tc-modal {\n  margin-top: 40px;\n}\n\n@media screen and (max-width: 700px) {\n  div .topbar-nav-text {\n    display: none;\n  }\n  div .topbar-nav-tools {\n    float: left;\n    position: relative;\n    left: 30px;\n    font-size: 1.3em;\n    \n  }\n  div .topbar-nav-tools button {\n    margin-right: 10px;\n  }\n  div .tc-story-river {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    padding-right: 10px;\n    padding-left: 10px;\n  }\n  div .tc-tiddler-frame {\n    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);\n  }\n}\n\n.topbar-nav {\n  display: block;\n  position: fixed;\n  top: 0px;\n  width: 100%;\n  height: 44px;\n  background-color: black;\n  box-shadow: 0px 1px 5px grey;\n  z-index: 1000;\n}\n\n.topbar-nav-text {\n  float: left;\n  color: white;\n  font-size: 25px;\n  font-family: 'Comfortaa', cursive;\n  margin-top: 8px;\n  margin-left: 8px;\n}\n\n.topbar-nav-tools {\n  float: right;\n  width: 290px;\n  height: 100%;\n  position: relative;\n  right: 50px;\n  padding-top: 8px;\n  font-size: 1.5em;\n}\n\n.topbar-nav-tools button {\n  margin-right: 20px;\n}\n\n.topbar-nav-tools img {\n  width: 1em;\n}\n\n.topbar-nav-tools svg {\n  fill: white;\n}&quot;,
             &quot;title&quot;: &quot;$:/plugins/Abe/maarfapad/navbar.css&quot;,
             &quot;tags&quot;: &quot;$:/tags/Stylesheet&quot;,
-            &quot;modified&quot;: &quot;20171204194646056&quot;
+            &quot;modified&quot;: &quot;20171204210736494&quot;
         },
         &quot;$:/plugins/Abe/maarfapad/navbar&quot;: {
             &quot;created&quot;: &quot;20171201155855304&quot;,
-            &quot;text&quot;: &quot;&lt;div class=\&quot;topbar-nav\&quot;&gt;\n&lt;div class=\&quot;topbar-nav-text\&quot;&gt;{{$:/SiteTitle}}&lt;/div&gt;\n&lt;div class=\&quot;topbar-nav-tools\&quot;&gt;\n{{$:/core/ui/Buttons/new-tiddler}}\n{{$:/core/ui/Buttons/close-all}}\n{{$:/core/ui/Buttons/advanced-search}}\n{{$:/core/ui/Buttons/save-wiki}}\n{{$:/plugins/Abe/maarfapad/start-button}}\n&lt;/div&gt;\n&lt;/div&gt;&quot;,
+            &quot;text&quot;: &quot;&lt;div class=\&quot;topbar-nav\&quot;&gt;\n&lt;div class=\&quot;topbar-nav-text\&quot;&gt;{{$:/SiteTitle}}&lt;/div&gt;\n&lt;div class=\&quot;topbar-nav-tools\&quot;&gt;\n{{$:/core/ui/Buttons/new-tiddler}}\n{{$:/core/ui/Buttons/close-all}}\n{{$:/plugins/Abe/maarfapad/notes-list}}\n{{$:/core/ui/Buttons/advanced-search}}\n{{$:/core/ui/Buttons/save-wiki}}\n{{$:/plugins/Abe/maarfapad/start-button}}\n&lt;/div&gt;\n&lt;/div&gt;&quot;,
             &quot;title&quot;: &quot;$:/plugins/Abe/maarfapad/navbar&quot;,
             &quot;tags&quot;: &quot;$:/tags/PageTemplate&quot;,
-            &quot;modified&quot;: &quot;20171204194520662&quot;
+            &quot;modified&quot;: &quot;20171204204952112&quot;
+        },
+        &quot;$:/plugins/Abe/maarfapad/notes-list&quot;: {
+            &quot;created&quot;: &quot;20171204204012539&quot;,
+            &quot;text&quot;: &quot;&lt;$button to=\&quot;Content\&quot; class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;\n{{$:/core/images/list}}\n&lt;/$button&gt;&quot;,
+            &quot;title&quot;: &quot;$:/plugins/Abe/maarfapad/notes-list&quot;,
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;modified&quot;: &quot;20171204211753028&quot;
         }
     }
 }</pre>
@@ -9678,16 +9693,16 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171116230438111" modified="20171116230438111" title="$:/state/plugin-info--906510658-$:/plugins/tiddlywiki/codemirror--1798174986">
 <pre>contents</pre>
 </div>
-<div created="20171116213325641" modified="20171204200829021" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad">
+<div created="20171116213325641" modified="20171204211824949" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad">
 <pre>no</pre>
 </div>
-<div created="20171116230039510" modified="20171204200827849" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad--309862025">
+<div created="20171116230039510" modified="20171204211823579" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad--309862025">
 <pre>readme</pre>
 </div>
-<div created="20171116213558265" modified="20171204200412548" title="$:/state/showeditpreview">
+<div created="20171116213558265" modified="20171204205006006" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
-<div created="20171120105742932" modified="20171204200839818" title="$:/state/sidebar">
+<div created="20171120105742932" modified="20171204211857752" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20171120111259502" modified="20171120112404436" title="$:/state/tab--1384169695">
@@ -9696,8 +9711,8 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171116223610451" modified="20171204194510499" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
-<div created="20171204200435722" modified="20171204200435722" title="$:/state/tab--1885102993">
-<pre>Content</pre>
+<div created="20171204200435722" modified="20171204203700908" title="$:/state/tab--1885102993">
+<pre>$:/plugins/Abe/maarfapad/controls</pre>
 </div>
 <div created="20171201183533006" modified="20171203211949789" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
@@ -9705,8 +9720,8 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171116225140723" modified="20171116225159591" title="$:/state/tab-1146444442">
 <pre>$:/plugins/Abe/maarfapad/controls</pre>
 </div>
-<div created="20171117110545237" modified="20171204200447505" title="$:/state/tab-136302114">
-<pre>Content</pre>
+<div created="20171117110545237" modified="20171204203724434" title="$:/state/tab-136302114">
+<pre>$:/plugins/Abe/maarfapad/controls</pre>
 </div>
 <div created="20171116223620098" modified="20171203211945291" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Appearance</pre>
@@ -9717,13 +9732,25 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171115223849047" modified="20171115224221485" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20171115223841006" modified="20171204200837795" title="$:/state/tab/sidebar--1835078512">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20171115223841006" modified="20171204211856052" title="$:/state/tab/sidebar--1835078512">
+<pre>Content</pre>
 </div>
 <div created="20171203211914954" modified="20171203211921066" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
 </div>
 <div created="20171204200437559" modified="20171204200441027" title="$:/state/toc/Content-Maarfapad manual--95673580">
+<pre>close</pre>
+</div>
+<div created="20171204204436574" modified="20171204204440640" title="$:/state/toc/Content-Maarfapad manual-1543333045">
+<pre>close</pre>
+</div>
+<div created="20171204201615960" modified="20171204203506228" title="$:/state/toc/Content-Maarfapad manual-1837365533">
+<pre>open</pre>
+</div>
+<div created="20171204211812541" modified="20171204211818447" title="$:/state/toc/Content-Maarfapad manual-255598929">
+<pre>close</pre>
+</div>
+<div created="20171204204216290" modified="20171204204238976" title="$:/state/toc/Content-Maarfapad manual-673589541">
 <pre>close</pre>
 </div>
 <div created="20171116224041162" modified="20171204200044657" title="$:/state/toc/Content-Maarfapad manual-926524725">
@@ -9756,7 +9783,7 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171115224159261" modified="20171115224203036" title="$:/state/tree/$:/plugins/tiddlywiki/">
 <pre>hide</pre>
 </div>
-<div list="" title="$:/StoryList">
+<div list="$:/plugins/Abe/maarfapad/navbar $:/plugins/Abe/maarfapad/notes-list" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20171116223528294" modified="20171204195643228" title="$:/temp/advancedsearch">
@@ -9778,19 +9805,19 @@ span.CodeMirror-selectedtext { background: none; }
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;https://rawgit.com/abesamma/TW5-editions/master/maarfapad_empty.html&quot;
+            &quot;text&quot;: &quot;file:///C:/Users/HP/Dev/maarfapad_empty.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;rawgit.com&quot;
+            &quot;text&quot;: &quot;&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;rawgit.com&quot;
+            &quot;text&quot;: &quot;&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
-            &quot;text&quot;: &quot;https:&quot;
+            &quot;text&quot;: &quot;file:&quot;
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
@@ -9798,7 +9825,7 @@ span.CodeMirror-selectedtext { background: none; }
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/abesamma/TW5-editions/master/maarfapad_empty.html&quot;
+            &quot;text&quot;: &quot;/C:/Users/HP/Dev/maarfapad_empty.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9806,7 +9833,7 @@ span.CodeMirror-selectedtext { background: none; }
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;https://rawgit.com&quot;
+            &quot;text&quot;: &quot;null&quot;
         }
     }
 }</pre>
@@ -10246,7 +10273,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20171122173502393" dependents="" description="Basic theme" modified="20171122173502393" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" server-url="https://tiddlywiki.com/library/v5.1.14/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.14/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.14">
 <pre></pre>
 </div>
-<div created="20171201164704101" modified="20171204200316441" title="$:/temp/search">
+<div created="20171201164704101" modified="20171204204148992" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20171122173502184" modified="20171122173502185" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.14/index.html" url="https://tiddlywiki.com/library/v5.1.14/index.html">
@@ -10364,7 +10391,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20171201183538804" modified="20171204195735785" title="$:/themes/tiddlywiki/vanilla/settings/backgroundimage">
 <pre>pattern.png</pre>
 </div>
-<div caption="Wiki Content" created="20171019175523778" list-after="$:/core/ui/SideBar/Open" modified="20171204200340468" tags="$:/tags/SideBar" title="Content" type="text/vnd.tiddlywiki">
+<div created="20171019175523778" list-after="$:/core/ui/SideBar/Open" modified="20171204204155733" tags="$:/tags/SideBar" title="Content" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 
 &lt;&lt;toc-selective-expandable &quot;Content&quot; &gt;&gt;
