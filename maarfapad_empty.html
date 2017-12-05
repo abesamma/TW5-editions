@@ -154,6 +154,8 @@ Error message and password prompt
 
 <li>$:/plugins/Abe/maarfapad</li>
 
+<li>$:/plugins/Abe/maarfapad/navbar.css</li>
+
 <li>$:/plugins/tiddlywiki/codemirror</li>
 
 <li>$:/plugins/tiddlywiki/codemirror/lib/codemirror.css</li>
@@ -378,6 +380,10 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/settings/backgroundimage</li>
 
+<li>$:/themes/tiddlywiki/vanilla/settings/backgroundimageattachment</li>
+
+<li>$:/themes/tiddlywiki/vanilla/settings/backgroundimagesize</li>
+
 <li>Content</li>
 
 <li>First thing's First: Security</li>
@@ -389,8 +395,6 @@ Error message and password prompt
 <li>maarfapad service</li>
 
 <li>Organise with Tags</li>
-
-<li>pattern.png</li>
 
 <li>Send Feedback</li>
 
@@ -8992,6 +8996,97 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20171201160256786" modified="20171205192606894" tags="$:/tags/Stylesheet" title="$:/plugins/Abe/maarfapad/navbar.css">
+<pre>@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+/* SIDEBAR BACKGROUND */
+div .tc-sidebar-scrollable {
+  &lt;$set name=&quot;sidebarCSS&quot; filter=&quot;[title[$:/state/sidebar]field:text[yes]]&quot; value=&quot;background: linear-gradient(to right, transparent, white 5%);&quot; emptyValue=&quot;&quot;&gt;
+     &lt;$text text=&lt;&lt;sidebarCSS&gt;&gt;/&gt;
+  &lt;/$set&gt;
+}
+/* VERTICAL OFFSET FOR TOP OF SIDEBAR */
+div .tc-sidebar-scrollable {
+  margin-top: 40px;
+}
+
+div .tc-modal {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  div .topbar-nav-text {
+    display: none;
+  }
+  div .topbar-nav-tools {
+    float: left;
+    position: relative;
+    left: 30px;
+    font-size: 1.35em;
+    
+  }
+  div .topbar-nav-tools button {
+    margin-right: 10px;
+    padding-top: 1px;
+  }
+  div .tc-story-river {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  div .tc-tiddler-frame {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+ div .tc-sidebar-scrollable {
+  &lt;$set name=&quot;sidebarCSS&quot; filter=&quot;[title[$:/state/sidebar]field:text[yes]]&quot; value=&quot;background: white;&quot; emptyValue=&quot;&quot;&gt;
+     &lt;$text text=&lt;&lt;sidebarCSS&gt;&gt;/&gt;
+  &lt;/$set&gt;
+}
+}
+
+.topbar-nav {
+  display: block;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 44px;
+  background-color: black;
+  box-shadow: 0px 1px 5px grey;
+  z-index: 1000;
+}
+
+.topbar-nav-text {
+  float: left;
+  color: white;
+  font-size: 25px;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.topbar-nav-tools {
+  float: right;
+  width: 290px;
+  height: 100%;
+  position: relative;
+  right: 50px;
+  padding-top: 8px;
+  font-size: 1.5em;
+}
+
+.topbar-nav-tools button {
+  margin-right: 20px;
+}
+
+.topbar-nav-tools img {
+  width: 1em;
+}
+
+.topbar-nav-tools svg {
+  fill: white;
+}</pre>
+</div>
 <div author="JeremyRuston" dependents="" description="CodeMirror: text editor" list="readme usage" plugin-type="plugin" title="$:/plugins/tiddlywiki/codemirror" type="application/json" version="5.1.15">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -9698,16 +9793,16 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171116230438111" modified="20171116230438111" title="$:/state/plugin-info--906510658-$:/plugins/tiddlywiki/codemirror--1798174986">
 <pre>contents</pre>
 </div>
-<div created="20171116213325641" modified="20171205183135550" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad">
+<div created="20171116213325641" modified="20171205192613832" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad">
 <pre>no</pre>
 </div>
-<div created="20171116230039510" modified="20171205183133166" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad--309862025">
+<div created="20171116230039510" modified="20171205192612758" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad--309862025">
 <pre>readme</pre>
 </div>
 <div created="20171116213558265" modified="20171204205006006" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
-<div created="20171120105742932" modified="20171205183206001" title="$:/state/sidebar">
+<div created="20171120105742932" modified="20171205192714418" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20171120111259502" modified="20171120112404436" title="$:/state/tab--1384169695">
@@ -9728,7 +9823,7 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171117110545237" modified="20171204203724434" title="$:/state/tab-136302114">
 <pre>$:/plugins/Abe/maarfapad/controls</pre>
 </div>
-<div created="20171116223620098" modified="20171204225458812" title="$:/state/tab-1749438307">
+<div created="20171116223620098" modified="20171205192705739" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20171117110720669" modified="20171122183143189" title="$:/state/tab-2037046965">
@@ -9737,8 +9832,8 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171115223849047" modified="20171115224221485" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20171115223841006" modified="20171205182949526" title="$:/state/tab/sidebar--1835078512">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20171115223841006" modified="20171205192619656" title="$:/state/tab/sidebar--1835078512">
+<pre>Content</pre>
 </div>
 <div created="20171203211914954" modified="20171203211921066" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
@@ -10278,7 +10373,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20171122173502393" dependents="" description="Basic theme" modified="20171122173502393" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" server-url="https://tiddlywiki.com/library/v5.1.14/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.14/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.14">
 <pre></pre>
 </div>
-<div created="20171201164704101" modified="20171204204148992" title="$:/temp/search">
+<div created="20171201164704101" modified="20171205192635243" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20171122173502184" modified="20171122173502185" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.14/index.html" url="https://tiddlywiki.com/library/v5.1.14/index.html">
@@ -10393,8 +10488,14 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
     }
 }</pre>
 </div>
-<div created="20171201183538804" modified="20171204195735785" title="$:/themes/tiddlywiki/vanilla/settings/backgroundimage">
-<pre>pattern.png</pre>
+<div created="20171201183538804" modified="20171205192643186" title="$:/themes/tiddlywiki/vanilla/settings/backgroundimage">
+<pre></pre>
+</div>
+<div created="20171205191958330" modified="20171205192249622" title="$:/themes/tiddlywiki/vanilla/settings/backgroundimageattachment">
+<pre>fixed</pre>
+</div>
+<div created="20171205191941822" modified="20171205192033444" title="$:/themes/tiddlywiki/vanilla/settings/backgroundimagesize">
+<pre>auto</pre>
 </div>
 <div created="20171019175523778" list-after="$:/core/ui/SideBar/Open" modified="20171204204155733" tags="$:/tags/SideBar" title="Content" type="text/vnd.tiddlywiki">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
@@ -10494,9 +10595,6 @@ Notes currently open can be seen under the ''Open'' tab.
 
 Now, let's take a closer look at the [[maarfapad service]]
 </pre>
-</div>
-<div title="pattern.png" type="image/png">
-<pre>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</pre>
 </div>
 <div created="20171020192629303" modified="20171020222947836" tags="Content" title="Send Feedback">
 <pre>Seen something broken? Want to suggest a feature or just express praise/frustration. Send feedback!
