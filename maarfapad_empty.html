@@ -410,8 +410,8 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20171209155744243" modified="20171209155744422" title="$:/config/AnimationDuration">
-<pre>50</pre>
+<div created="20171209155744243" modified="20171210204159795" title="$:/config/AnimationDuration">
+<pre>145</pre>
 </div>
 <div created="20140930200019048" modified="20171113161936572" tags="configuration" title="$:/config/CodeMirror" type="application/json">
 <pre>{
@@ -8741,7 +8741,7 @@ Error message and password prompt
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div author="Abe" created="20140902114846490" description="Maarfapad: A KM platform" list="readme license history" modified="20170829190545776" plugin-type="plugin" title="$:/plugins/Abe/maarfapad" type="application/json" version="1.0.35-alpha">
+<div author="Abe" created="20140902114846490" description="Maarfapad: A KM platform" list="readme license history" modified="20170829190545776" plugin-type="plugin" title="$:/plugins/Abe/maarfapad" type="application/json" version="1.0.36-alpha">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/plugins/Abe/maarfapad/account.js&quot;: {
@@ -8770,13 +8770,13 @@ Error message and password prompt
             &quot;text&quot;: &quot;!!''Maarfapad Saver Setting''\n\n{{$:/plugins/Abe/maarfapad/ToggleSaver}}&quot;
         },
         &quot;$:/plugins/Abe/maarfapad/create-wiki&quot;: {
-            &quot;caption&quot;: &quot;Create Wiki&quot;,
             &quot;created&quot;: &quot;20170902091622518&quot;,
-            &quot;modified&quot;: &quot;20170902184704613&quot;,
+            &quot;caption&quot;: &quot;Create Wiki&quot;,
+            &quot;modified&quot;: &quot;20171210204511590&quot;,
             &quot;tags&quot;: &quot;&quot;,
             &quot;title&quot;: &quot;$:/plugins/Abe/maarfapad/create-wiki&quot;,
             &quot;type&quot;: &quot;text/vnd.tiddlywiki&quot;,
-            &quot;text&quot;: &quot;&lt;div style=\&quot;width:250px;color:black\&quot;&gt;\nCreate a wiki to suit your needs:\n&lt;/div&gt;\n&lt;br&gt;\nName your wiki:\n&lt;$edit-text tag=\&quot;input\&quot; tiddler=\&quot;$:/plugins/Abe/maarfapad/wiki-name\&quot; /&gt;\n&lt;br&gt;\n&lt;br&gt;\nType of wiki:\n&lt;$select tiddler=\&quot;$:/plugins/Abe/maarfapad/wiki-type\&quot;&gt;\n&lt;option&gt;empty&lt;/option&gt;\n&lt;/$select&gt;\n&lt;br&gt;\n&lt;br&gt;\n&lt;$button message=\&quot;create-wiki\&quot;&gt;\nCreate Wiki\n&lt;/$button&gt;\n&lt;$create /&gt;&quot;
+            &quot;text&quot;: &quot;&lt;div style=\&quot;width:250px;color:black\&quot;&gt;\nCreate a wiki to suit your needs:\n&lt;/div&gt;\n&lt;br&gt;\nName your wiki:\n&lt;$edit-text tag=\&quot;input\&quot; tiddler=\&quot;$:/plugins/Abe/maarfapad/wiki-name\&quot; /&gt;\n&lt;br&gt;\n&lt;br&gt;\nType of wiki:\n&lt;$select tiddler=\&quot;$:/plugins/Abe/maarfapad/wiki-type\&quot;&gt;\n&lt;option&gt;empty&lt;/option&gt;\n&lt;/$select&gt;\n&lt;br&gt;\n&lt;br&gt;\n&lt;$button message=\&quot;create-wiki\&quot;&gt;\n&lt;$action-sendmessage $message=\&quot;tm-notify\&quot; $param=\&quot;$:/plugins/Abe/maarfapad/create-working-notify\&quot; /&gt;\nCreate Wiki\n&lt;/$button&gt;\n&lt;$create /&gt;&quot;
         },
         &quot;$:/plugins/Abe/maarfapad/create.js&quot;: {
             &quot;created&quot;: &quot;20170902121035383&quot;,
@@ -8890,7 +8890,7 @@ Error message and password prompt
             &quot;type&quot;: &quot;application/json&quot;,
             &quot;title&quot;: &quot;$:/plugins/Abe/maarfapad/ToggleSaverState&quot;,
             &quot;tags&quot;: &quot;&quot;,
-            &quot;modified&quot;: &quot;20171029163021862&quot;
+            &quot;modified&quot;: &quot;20171210203937327&quot;
         },
         &quot;$:/plugins/Abe/maarfapad/upload.js&quot;: {
             &quot;created&quot;: &quot;20170828182221462&quot;,
@@ -8984,10 +8984,10 @@ Error message and password prompt
         },
         &quot;$:/plugins/Abe/maarfapad/navbar&quot;: {
             &quot;created&quot;: &quot;20171201155855304&quot;,
-            &quot;text&quot;: &quot;&lt;div class=\&quot;topbar-nav\&quot;&gt;\n&lt;div class=\&quot;topbar-nav-text\&quot;&gt;{{$:/SiteTitle}}&lt;/div&gt;\n&lt;div class=\&quot;topbar-nav-tools\&quot;&gt;\n{{$:/core/ui/Buttons/new-tiddler}}\n{{$:/core/ui/Buttons/close-all}}\n{{$:/plugins/Abe/maarfapad/notes-list}}\n{{$:/core/ui/Buttons/advanced-search}}\n{{$:/core/ui/Buttons/save-wiki}}\n{{$:/plugins/Abe/maarfapad/start-button}}\n&lt;/div&gt;\n&lt;/div&gt;&quot;,
+            &quot;text&quot;: &quot;&lt;div class=\&quot;topbar-nav\&quot;&gt;\n&lt;div class=\&quot;topbar-nav-text\&quot;&gt;{{$:/SiteTitle}}&lt;/div&gt;\n&lt;div class=\&quot;topbar-nav-tools\&quot;&gt;\n{{$:/core/ui/Buttons/new-tiddler}}\n{{$:/core/ui/Buttons/close-all}}\n{{$:/plugins/Abe/maarfapad/notes-list}}\n{{$:/core/ui/Buttons/advanced-search}}\n{{$:/plugins/Abe/maarfapad/save-wiki-button}}\n{{$:/plugins/Abe/maarfapad/start-button}}\n&lt;/div&gt;\n&lt;/div&gt;&quot;,
             &quot;title&quot;: &quot;$:/plugins/Abe/maarfapad/navbar&quot;,
             &quot;tags&quot;: &quot;$:/tags/PageTemplate&quot;,
-            &quot;modified&quot;: &quot;20171204204952112&quot;
+            &quot;modified&quot;: &quot;20171210203345776&quot;
         },
         &quot;$:/plugins/Abe/maarfapad/notes-list&quot;: {
             &quot;created&quot;: &quot;20171204204012539&quot;,
@@ -8995,6 +8995,27 @@ Error message and password prompt
             &quot;title&quot;: &quot;$:/plugins/Abe/maarfapad/notes-list&quot;,
             &quot;tags&quot;: &quot;&quot;,
             &quot;modified&quot;: &quot;20171205202741086&quot;
+        },
+        &quot;$:/plugins/Abe/maarfapad/create-working-notify&quot;: {
+            &quot;created&quot;: &quot;20171210204309288&quot;,
+            &quot;text&quot;: &quot;''Working...''&quot;,
+            &quot;title&quot;: &quot;$:/plugins/Abe/maarfapad/create-working-notify&quot;,
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;modified&quot;: &quot;20171210204332236&quot;
+        },
+        &quot;$:/plugins/Abe/maarfapad/save-working-notify&quot;: {
+            &quot;created&quot;: &quot;20171210202241479&quot;,
+            &quot;text&quot;: &quot;''Saving wiki...''&quot;,
+            &quot;title&quot;: &quot;$:/plugins/Abe/maarfapad/save-working-notify&quot;,
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;modified&quot;: &quot;20171210203059637&quot;
+        },
+        &quot;$:/plugins/Abe/maarfapad/save-wiki-button&quot;: {
+            &quot;created&quot;: &quot;20171210201727294&quot;,
+            &quot;text&quot;: &quot;&lt;$button message=\&quot;tm-save-wiki\&quot; param={{$:/config/SaveWikiButton/Template}} tooltip={{$:/language/Buttons/SaveWiki/Hint}} aria-label={{$:/language/Buttons/SaveWiki/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;\n&lt;$action-sendmessage $message=\&quot;tm-notify\&quot; $param=\&quot;$:/plugins/Abe/maarfapad/save-working-notify\&quot;/&gt;\n&lt;span class=\&quot;tc-dirty-indicator\&quot;&gt;\n&lt;$list filter=\&quot;[&lt;tv-config-toolbar-icons&gt;prefix[yes]]\&quot;&gt;\n{{$:/core/images/save-button}}\n&lt;/$list&gt;\n&lt;$list filter=\&quot;[&lt;tv-config-toolbar-text&gt;prefix[yes]]\&quot;&gt;\n&lt;span class=\&quot;tc-btn-text\&quot;&gt;&lt;$text text={{$:/language/Buttons/SaveWiki/Caption}}/&gt;&lt;/span&gt;\n&lt;/$list&gt;\n&lt;/span&gt;\n&lt;/$button&gt;&quot;,
+            &quot;title&quot;: &quot;$:/plugins/Abe/maarfapad/save-wiki-button&quot;,
+            &quot;tags&quot;: &quot;&quot;,
+            &quot;modified&quot;: &quot;20171210203126630&quot;
         }
     }
 }</pre>
@@ -9705,22 +9726,22 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171116230438111" modified="20171116230438111" title="$:/state/plugin-info--906510658-$:/plugins/tiddlywiki/codemirror--1798174986">
 <pre>contents</pre>
 </div>
-<div created="20171116213325641" modified="20171206184110862" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad">
-<pre>no</pre>
+<div created="20171116213325641" modified="20171210195351454" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad">
+<pre>yes</pre>
 </div>
-<div created="20171116230039510" modified="20171206184109827" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad--309862025">
-<pre>readme</pre>
+<div created="20171116230039510" modified="20171210195353077" title="$:/state/plugin-info-875497724-$:/plugins/Abe/maarfapad--309862025">
+<pre>contents</pre>
 </div>
 <div created="20171116213558265" modified="20171204205006006" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
-<div created="20171120105742932" modified="20171209155803532" title="$:/state/sidebar">
+<div created="20171120105742932" modified="20171210204850859" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20171120111259502" modified="20171120112404436" title="$:/state/tab--1384169695">
 <pre>$:/plugins/Abe/maarfapad/create-wiki</pre>
 </div>
-<div created="20171116223610451" modified="20171205182601036" title="$:/state/tab--1498284803">
+<div created="20171116223610451" modified="20171210202048407" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
 <div created="20171204200435722" modified="20171204203700908" title="$:/state/tab--1885102993">
@@ -9744,7 +9765,7 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171115223849047" modified="20171115224221485" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20171115223841006" modified="20171206184114116" title="$:/state/tab/sidebar--1835078512">
+<div created="20171115223841006" modified="20171210204843213" title="$:/state/tab/sidebar--1835078512">
 <pre>Content</pre>
 </div>
 <div created="20171203211914954" modified="20171203211921066" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -9795,10 +9816,10 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20171115224159261" modified="20171115224203036" title="$:/state/tree/$:/plugins/tiddlywiki/">
 <pre>hide</pre>
 </div>
-<div list="[[Hi there!]]" title="$:/StoryList">
+<div list="" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20171116223528294" modified="20171205182559786" title="$:/temp/advancedsearch">
+<div created="20171116223528294" modified="20171210202046892" title="$:/temp/advancedsearch">
 <pre></pre>
 </div>
 <div created="20171119211113780" modified="20171119211113780" title="$:/temp/HidePluginWarning">
