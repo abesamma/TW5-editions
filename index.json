@@ -3,6 +3,7 @@
 		"Empty version": "empty"
 	},
 	"Developer editions": {
-	        "Developer version": "dev"
+	        "Developer version": "dev",
+		"Web app toolkit": "webapp"
         }
 }
