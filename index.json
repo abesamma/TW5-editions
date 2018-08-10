@@ -5,5 +5,8 @@
 	"Developer editions": {
 	        "Developer version": "dev",
 		"Web app toolkit": "webapp"
-        }
+        },
+	"Analytics editions": {
+		"Excel": "excel"
+	}
 }
