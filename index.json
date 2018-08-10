@@ -2,4 +2,7 @@
 	"Vanilla editions": {
 		"Empty version": "empty"
 	}
+	"Developer editions": {
+	        "Developer version": "dev"
+        }
 }
