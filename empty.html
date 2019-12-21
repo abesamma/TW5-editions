@@ -48,7 +48,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
 <title>μ|aarfapad — Maarfapad: A Knowledge Management Platform</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
-
+<link href="//fonts.googleapis.com/css?family=Comfortaa:300&amp;subset=latin-ext" rel="stylesheet"><script src="https://cdnjs.cloudflare.com/ajax/libs/hopscotch/0.3.1/js/hopscotch.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hopscotch/0.3.1/css/hopscotch.min.css" />
 
 </head>
 <body class="tc-body">
@@ -261,6 +261,14 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/maarfapad/ToggleSaverState</li>
+
+<li>$:/state/sidebar</li>
+
+<li>$:/state/tab/moresidebar-1850697562</li>
+
+<li>$:/state/tab/sidebar--595412856</li>
+
 <li>$:/StoryList</li>
 
 <li>$:/temp/info-plugin</li>
@@ -406,8 +414,8 @@ Error message and password prompt
 <div created="20180902105512260" modified="20180902111359509" title="$:/config/Plugins/Disabled/$:/plugins/Abe/maarfapad">
 <pre>no</pre>
 </div>
-<div created="20171204225453338" modified="20180103232702732" title="$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/codemirror">
-<pre>no</pre>
+<div created="20171204225453338" modified="20191221113836382" title="$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/codemirror">
+<pre>yes</pre>
 </div>
 <div created="20170722200106163" modified="20170722200107260" title="$:/config/RelinkOnRename" type="text/vnd.tiddlywiki">
 <pre>yes</pre>
@@ -11143,7 +11151,21 @@ span.CodeMirror-selectedtext { background: none; }
 <div created="20141001162418384" modified="20180314171704922" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>&lt;span style=&quot;font-family: Comfortaa&quot;&gt;μ|aarfapad&lt;/span&gt;</pre>
 </div>
-<div list="" title="$:/StoryList">
+<div created="20180902164059940" modified="20191221113811741" title="$:/state/maarfapad/ToggleSaverState" type="application/json">
+<pre>{
+    &quot;toggleSaver&quot;: &quot;false&quot;
+}</pre>
+</div>
+<div created="20191221113811739" modified="20191221113811740" title="$:/state/sidebar">
+<pre>yes</pre>
+</div>
+<div created="20191221113827145" modified="20191221113827145" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Plugins</pre>
+</div>
+<div created="20191221113815240" modified="20191221113845237" title="$:/state/tab/sidebar--595412856">
+<pre>Content</pre>
+</div>
+<div created="20191221113816192" list="Tutorial" modified="20191221113830878" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11159,19 +11181,19 @@ span.CodeMirror-selectedtext { background: none; }
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;https://tiddlywiki.com/upgrade.html&quot;
+            &quot;text&quot;: &quot;file:///C:/Users/HP/Dev/TW5-editions/empty.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;tiddlywiki.com&quot;
+            &quot;text&quot;: &quot;&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;tiddlywiki.com&quot;
+            &quot;text&quot;: &quot;&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
-            &quot;text&quot;: &quot;https:&quot;
+            &quot;text&quot;: &quot;file:&quot;
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
@@ -11179,7 +11201,7 @@ span.CodeMirror-selectedtext { background: none; }
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/upgrade.html&quot;
+            &quot;text&quot;: &quot;/C:/Users/HP/Dev/TW5-editions/empty.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -11187,7 +11209,7 @@ span.CodeMirror-selectedtext { background: none; }
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;https://tiddlywiki.com&quot;
+            &quot;text&quot;: &quot;null&quot;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
